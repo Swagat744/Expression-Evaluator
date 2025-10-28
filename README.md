@@ -1,86 +1,89 @@
-🧮 Expression Evaluator Using Stack
+# 🧮 Expression Evaluator Using Stack
 
-A web-based application that demonstrates the practical use of the Stack data structure to convert and evaluate mathematical expressions. This project converts human-readable infix notation (e.g., (3+5)*2) into computer-friendly postfix notation and then computes the final result.
+A **web-based application** that demonstrates the power and practical use of the **Stack data structure** to convert and evaluate mathematical expressions.
+It converts human-readable **Infix Notation** → **Postfix (Reverse Polish Notation)** and then evaluates the result efficiently.
 
-This project was built as a core part of a Data Structures and Algorithms curriculum, showcasing the bridge between theoretical concepts and practical web-based tools.
+> Built as part of the **Data Structures & Algorithms (DSA)** curriculum — connecting **theory** with **hands-on implementation**.
 
-![]
+---
 
-✨ Key Features
+## ✨ Key Features
 
-Infix to Postfix Conversion: Implements the Shunting Yard Algorithm to correctly parse an infix expression into its equivalent postfix (Reverse Polish Notation) form.
+* 🔀 **Infix → Postfix Conversion** using the **Shunting Yard Algorithm**
+* 🧱 **Stack-based Evaluation** of postfix expressions in **O(n)** time
+* 👀 **Step-by-step visualization** of operations during conversion & evaluation
+* ➕➖✖️➗ **Full operator support**
+  `+`, `-`, `*`, `/`, `^` (Exponentiation)
+* 🧩 **Proper parentheses handling** including nested expressions
+* ⚠️ **Error handling**
+  Invalid syntax, mismatched brackets, division by zero, etc.
 
-Postfix Evaluation: Uses a stack-based algorithm to efficiently evaluate the postfix expression in linear time.
+---
 
-Step-by-Step Visualization: Provides a clear, step-by-step log of all stack operations for both the conversion and evaluation, making it an excellent educational tool.
+## 💻 Tech Stack
 
-Full Operator Support: Correctly handles operator precedence and associativity for:
+| Technology            | Purpose                                              |
+| --------------------- | ---------------------------------------------------- |
+| **HTML5**             | Structure & UI layout                                |
+| **CSS3**              | Responsive styling & clean design                    |
+| **JavaScript (ES6+)** | Core logic (Stack, Parsing, Evaluation, DOM Control) |
 
-Addition (+)
+---
 
-Subtraction (-)
+## 🚀 How to Use
 
-Multiplication (*)
+### 🔗 Live Demo
 
-Division (/)
+Once GitHub Pages is enabled, update link below:
 
-Exponentiation (^)
-
-Parentheses Handling: Correctly manages nested parentheses to enforce the order of operations.
-
-Error Handling: Provides user-friendly error messages for invalid expressions (e.g., mismatched parentheses, division by zero).
-
-💻 Technology Stack
-
-HTML5: For the core structure and layout of the web application.
-
-CSS3: For modern, responsive styling and a clean user interface.
-
-JavaScript (ES6+): For all the core logic, including:
-
-Stack data structure implementation.
-
-Shunting Yard Algorithm (Infix to Postfix).
-
-Postfix Evaluation Algorithm.
-
-DOM manipulation for the interactive UI.
-
-🚀 How to Use
-
-1. Live Demo (GitHub Pages):
-
-(Once you enable GitHub Pages, paste your live URL here)
+```
 https://<YourUsername>.github.io/<YourRepositoryName>/
+```
 
-2. Local Setup:
+### 🛠️ Local Setup
 
-Clone the repository:
-
+```bash
+# Clone the repo
 git clone https://github.com/Swagat744/Expression-Evaluator
 
-
-Navigate to the project folder:
-
+# Navigate to folder
 cd Expression-Evaluator
 
+# Run locally
+Open index.html in any web browser
+```
 
-Open the index.html file in your favorite web browser.
+Everything runs client-side — **no server required ✅**
 
-...and that's it! The entire application is self-contained and runs on the client-side.
+---
 
-🎓 Core Concepts & Algorithms
+## 🎓 Computer Science Concepts Used
 
-This project is a practical implementation of two fundamental computer science algorithms:
+### ✔️ Shunting Yard Algorithm
 
-Shunting Yard Algorithm: Developed by Edsger Dijkstra, this algorithm is used to parse infix expressions. It uses a stack to manage operators and parentheses, correctly reordering them into a postfix queue based on their precedence and associativity.
+Designed by **Edsger Dijkstra**
+Used to convert **infix → postfix** while maintaining:
 
-Postfix Evaluation: Postfix (RPN) is evaluated non-recursively using a single stack. The expression is scanned from left to right:
+* Operator **precedence**
+* Operator **associativity**
+* Correct **parentheses evaluation**
 
-If a number is found, it is pushed onto the stack.
+### ✔️ Postfix (RPN) Evaluation
 
-If an operator is found, two numbers are popped from the stack, the operation is performed, and the result is pushed back onto the stack.
+Scans expression left → right:
 
-The final item left on the stack is the result.
+* If number → push to stack
+* If operator → pop 2 operands, evaluate, push result back
 
-Both algorithms achieve an efficient linear time complexity (O(n)), as they only need to scan the expression once.
+➡️ Final stack value = **Answer**
+
+Both algorithms operate in:
+📌 **Linear Time Complexity → O(n)**
+
+---
+
+## 📸 Screenshots / Demo 
+
+<img width="907" height="838" alt="Screenshot 2025-10-28 210317" src="https://github.com/user-attachments/assets/747abb50-fa91-42ff-97e7-e7f0b63faad6" />
+
+<img width="804" height="870" alt="Screenshot 2025-10-28 210325" src="https://github.com/user-attachments/assets/be29c522-3c36-4edc-bead-69ee14e12005" />
