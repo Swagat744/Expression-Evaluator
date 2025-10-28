@@ -32,14 +32,6 @@ It converts human-readable **Infix Notation** → **Postfix (Reverse Polish Nota
 
 ## 🚀 How to Use
 
-### 🔗 Live Demo
-
-Once GitHub Pages is enabled, update link below:
-
-```
-https://<YourUsername>.github.io/<YourRepositoryName>/
-```
-
 ### 🛠️ Local Setup
 
 ```bash
