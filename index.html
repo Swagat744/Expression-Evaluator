@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expression Evaluator</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧮 Expression Evaluator</h1>
+        <p class="subtitle">Using Stack Data Structure</p>
+
+        <div class="info-box">
+            <strong>Supported operators:</strong> + - * / ^ ( )<br>
+            <strong>Example:</strong> (3 + 5) * 2 - 8 / 4
+        </div>
+
+        <div class="input-section">
+            <div class="input-group">
+                <input type="text" id="expressionInput" placeholder="Enter infix expression (e.g., 3+5*2)" value="(3+5)*2-8/4">
+            </div>
+            <div class="button-group">
+                <button onclick="convertToPostfix()">Convert to Postfix</button>
+                <button onclick="evaluateExpression()">Evaluate</button>
+                <button onclick="clearAll()">Clear</button>
+            </div>
+        </div>
+
+        <div id="errorMsg"></div>
+        <div id="results"></div>
+        <div id="visualization"></div>
+        <div id="steps"></div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <!-- 'defer' ensures the script runs after the HTML is parsed -->
+    <script src="script.js" defer></script>
+</body>
+</html>
